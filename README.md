@@ -19,6 +19,7 @@
 在`>`的后面粘贴以下代码并回车：
 
 `
+
 // 引入jQuery库
 var jq = document.createElement('script');
 jq.src = "//code.jquery.com/jquery-3.6.0.min.js";
@@ -74,6 +75,7 @@ function timeout() {
 
 // 等待jQuery加载完成后再执行
 jq.onload = timeout;
+
 `
 
 第一次会显示以下内容：
