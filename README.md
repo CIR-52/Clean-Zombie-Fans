@@ -21,15 +21,11 @@
 在`>`的后面粘贴以下代码并回车：
 
 ```
-
 // 引入jQuery库
 var jq = document.createElement('script');
 jq.src = "//code.jquery.com/jquery-3.6.0.min.js";
 document.getElementsByTagName('head')[0].appendChild(jq);
-
 var count = 0;
-
-// 筛选需要移除的粉丝并点击移除按钮
 function removeFans() {
     $(".list-item").each(function () {
         var $this = $(this);
@@ -49,8 +45,6 @@ function removeFans() {
         }
     });
 }
-
-// 定时执行移除和确认操作
 function timeout() {
     setTimeout(function () {
         if (count % 2 === 0) {
@@ -62,10 +56,7 @@ function timeout() {
         timeout();
     }, 2100);
 }
-
-// 等待jQuery加载完成后再执行
 jq.onload = timeout;
-
 ```
 
 第一次会显示以下内容：
